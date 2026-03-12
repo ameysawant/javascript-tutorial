@@ -1,0 +1,620 @@
+//[ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ - - - - - array methods - - - - - ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+const myArray = {
+  isSuccessful: true,
+  exceptionMessage: "Successfully fetched all the products",
+  result: [
+    {
+      _id: "698efe379cb883637ce9281b",
+      categoryName: "bath & body",
+      parentId: null,
+      products: [],
+      children: [
+        {
+          _id: "698eff8a9cb883637ce92834",
+          categoryName: "exotic soap",
+          parentId: "698efe379cb883637ce9281b",
+          products: [
+            {
+              id: "698f588d9cb883637ce92922",
+              title: "Azardian Deep Cleansing Soap",
+              images: [
+                "https://res.cloudinary.com/dgfnccyus/image/upload/v1768890838/Azardian-1_i8dzvf.webp",
+                "https://res.cloudinary.com/dgfnccyus/image/upload/v1768890838/Azardian-2_fhhpdo.webp",
+                "https://res.cloudinary.com/dgfnccyus/image/upload/v1768890838/Azardian-3_mqj4xh.webp",
+              ],
+              price: 70,
+              description:
+                "Enriched with Neem, Basil and Manjishtha which are traditionally known as natural cleansers with detoxifying, purifying, nourishing, healing and soothing properties.",
+              sku: "SSCPL1077",
+              otherDetails: {
+                isNewArrival: false,
+                isFeatured: false,
+                isBestSeller: false,
+                isOnSale: false,
+                isDiscounted: false,
+                discount: 0,
+                isLimitedEdition: false,
+                isDiscountinued: false,
+                isCodAvailable: false,
+                isReturnable: false,
+                isOutOfStock: false,
+                productDetails: {
+                  netContent: "100 g",
+                  useBefore: "Use Before 24 month from date of manufacture",
+                  mrp: "₹ 70.00 (Incl. of all taxes)",
+                  uspGram: "₹ 0.70 per gram",
+                  genericName: "SOAP",
+                  countryOfOrigin: "India",
+                  manufacturedBy:
+                    "Sai Samartha Cosmetics Pvt Ltd\nPlot 54, Sector 1, The V.T.I.C. Estate, Gauraipada, Vasai East, District Palghar – 401208\nM.L. No.: MH/105046",
+                  consumerFeedback:
+                    "In case of consumer feedback and complaints, write to our customer care executive on “Manufactured By” address, contact on +91-7208755920, email to support@sscplherbals.com",
+                  usageRestriction: "FOR EXTERNAL USE ONLY",
+                  storage:
+                    "Store in cool & dry place. Keep away from direct sunlight, heat & fire.",
+                  caution:
+                    "Product may contain herbal extracts, oils & butters from botanical and natural sources and may change colour & fragrance. Please read product label carefully for list of ingredients.",
+                  warning:
+                    "Patch test recommended before use. Discontinue if irritation occurs. Even natural ingredients may cause or trigger allergies.",
+                },
+                productDescription: [
+                  "For All Skin Types",
+                  "For Face and Body",
+                  "Helps fight pimple and acne related skin problems",
+                  "Grade 1 TFM 76, No Cosmetic Talc",
+                  "Fresh and Herbal Aroma",
+                  "Excellent to fight body odor",
+                  "Paraben Free, Sulfate Free, Cruelty Free",
+                  "Vegan Friendly, No Animal Fats",
+                  "No Bleach",
+                  "Full Ingredient Disclosure",
+                  "No Gimmicks",
+                  "Simple and Easy Skin Care",
+                  "Proudly MADE IN INDIA",
+                ],
+                benefits: [
+                  "Enriched with Neem Oil, Basil Oil and Manjishtha Extract",
+                  "Helps with Deep Cleansing and Exfoliation",
+                  "Free of animal by-products and harmful parabens",
+                  "NO Bleach",
+                  "Made IN INDIA",
+                ],
+                howToUse: [
+                  "Step 1 : Grab the soap bar, run it all over your body covering yourself in its rich lather. Gently cleanse your skin and thoroughly rinse yourself off.",
+                  "STORAGE : Kindly do not expose to direct sunlight and keep in cool and dry place.",
+                ],
+                ingredientsUsed: ["Neem, Tulsi, Manjishta"],
+              },
+              categoryId: "698eff8a9cb883637ce92834",
+            },
+            {
+              id: "69a142cf09847a3ee97ab3d9",
+              title: "Sparino Ancient Herbal Remedies Soap Combo Pack of 6",
+              images: [
+                "https://res.cloudinary.com/dgfnccyus/image/upload/v1768890926/Sparino_Ancient_Herbal_Remedies_Soap_Combo_Pack_of_61_ko5aww.webp",
+              ],
+              price: 210,
+              description:
+                "76% TFM Grade 1 Bar Soap with exotic aromas. No Animal Fats and Vegan Friendly, Enriched with herbal extracts.",
+              sku: "SSCPL1002",
+              otherDetails: {
+                isNewArrival: true,
+                isFeatured: false,
+                isBestSeller: true,
+                isOnSale: false,
+                isDiscounted: false,
+                discount: 0,
+                isLimitedEdition: false,
+                isDiscountinued: false,
+                isCodAvailable: false,
+                isReturnable: false,
+                isOutOfStock: false,
+                productDetails: {
+                  netContent: "75 g",
+                  useBefore: "Use Before 24 month from date of manufacture",
+                  mrp: "₹ 40.00 (Incl. of all taxes)",
+                  uspGram: "₹ 0.53 per gram",
+                  genericName: "SOAP",
+                  countryOfOrigin: "India",
+                  manufacturedBy:
+                    "Sai Samartha Cosmetics Pvt Ltd\nPlot 54, Sector 1, The V.T.I.C. Estate, Gauraipada, Vasai East, District Palghar – 401208\nM.L. No.: MH/105046",
+                  consumerFeedback:
+                    "In case of consumer feedback and complaints, write to our customer care executive on “Manufactured By” address, contact on +91-7208755920, email to support@sscplherbals.com",
+                  usageRestriction: "FOR EXTERNAL USE ONLY",
+                  storage:
+                    "Store in cool & dry place. Keep away from direct sunlight, heat & fire.",
+                  caution:
+                    "Product may contain herbal extracts, oils & butters from botanical and natural sources and may change colour & fragrance. Please read product label carefully for list of ingredients.",
+                  warning:
+                    "Patch test recommended before use. Discontinue if irritation occurs. Even natural ingredients may cause or trigger allergies.",
+                },
+                productDescription: ["not available"],
+                benefits: [
+                  "For All Skin Types",
+                  "For Face and Body",
+                  "Grade 1 TFM 76%",
+                  "Fresh and Mild Fine Fragrance",
+                  "Paraben Free",
+                  "Sulfate Free",
+                  "Cruelty Free",
+                  "No Bleach",
+                  "No Cosmetic Talc",
+                  "No Animal Fats",
+                  "Each soap is Enriched 9 Herbal Extracts",
+                  "Helps with Deep Cleansing and Exfoliation",
+                  "Made IN INDIA",
+                  "NO Gimmicks",
+                  "Full Ingredient Disclosure",
+                ],
+                howToUse: [
+                  "Grab the soap bar, run it all over your body covering yourself in its rich lather. Gently cleanse your skin and thoroughly rinse off.",
+                ],
+                ingredientsUsed: [
+                  "Aloevera, Neem, Turmeric, Papaya, Rose, Lemon, Basil, Manjistha, Coconut, Palash, Licorice, Tea Tree, Cucumber",
+                ],
+              },
+              categoryId: "698eff8a9cb883637ce92834",
+            },
+          ],
+          children: [],
+        },
+        {
+          _id: "698f007e9cb883637ce92841",
+          categoryName: "hand & foot",
+          parentId: "698efe379cb883637ce9281b",
+          products: [],
+          children: [
+            {
+              _id: "698f01199cb883637ce92853",
+              categoryName: "hand & foot bath salt",
+              parentId: "698f007e9cb883637ce92841",
+              products: [],
+              children: [],
+            },
+          ],
+        },
+        {
+          _id: "698f41879cb883637ce9285c",
+          categoryName: "lotion",
+          parentId: "698efe379cb883637ce9281b",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f419f9cb883637ce92860",
+          categoryName: "salt sugar body scrub",
+          parentId: "698efe379cb883637ce9281b",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f41bc9cb883637ce92867",
+          categoryName: "shower gel",
+          parentId: "698efe379cb883637ce9281b",
+          products: [],
+          children: [],
+        },
+      ],
+    },
+    {
+      _id: "698f42129cb883637ce9286b",
+      categoryName: "face care",
+      parentId: null,
+      products: [],
+      children: [
+        {
+          _id: "698f422e9cb883637ce9286f",
+          categoryName: "cleansing milk",
+          parentId: "698f42129cb883637ce9286b",
+          products: [
+            {
+              id: "698ffc5e1391e3c651889e67",
+              title: "Mix Fruit Cleansing Milk",
+              images: [
+                "https://res.cloudinary.com/dgfnccyus/image/upload/v1768890856/mix-fruit-cleansing-milk-1_g0jijg.webp",
+              ],
+              price: 160,
+              description:
+                "Usage of Multi Fruit Extracts :- Traditionally known for their detoxifying, tightening, nourishing, healing and anti-oxidant properties.",
+              sku: "SSCPL1104",
+              otherDetails: {
+                isNewArrival: false,
+                isFeatured: false,
+                isBestSeller: false,
+                isOnSale: false,
+                isDiscounted: false,
+                discount: 0,
+                isLimitedEdition: false,
+                isDiscountinued: false,
+                isCodAvailable: false,
+                isReturnable: false,
+                isOutOfStock: false,
+                productDetails: {
+                  netContent: "200 ml",
+                  useBefore: "Use Before 24 months from date of manufacture",
+                  mrp: "₹ 160.00 (Incl. of all taxes)",
+                  uspGram: "₹ 0.80 per ml",
+                  genericName: "CLEANSING MILK",
+                  countryOfOrigin: "India",
+                  manufacturedBy:
+                    "Sai Samartha Cosmetics Pvt LtdPlot 54, Sector 1, The V.T.I.C. Estate, Gauraipada, Vasai East, District Palghar – 401208M.L. No.: MH/105046",
+                  consumerFeedback:
+                    "In case of consumer feedback and complaints, write to our customer care executive on “Manufactured By” address, contact on +91-7208755920, email to support@sscplherbals.com",
+                  usageRestriction: "FOR EXTERNAL USE ONLY",
+                  storage:
+                    "Store in cool & dry place. Keep away from direct sunlight, heat & fire.",
+                  caution:
+                    "Product may contain herbal extracts, oils & butters from botanical and natural sources and may change colour & fragrance. Please read product label carefully for list of ingredients.",
+                  warning:
+                    "Patch test recommended before use. Discontinue if irritation occurs. Even natural ingredients may cause or trigger allergies.",
+                },
+                productDescription: [
+                  "Full Ingredient Disclosure",
+                  "No Gimmicks",
+                  "Simple and Easy Skin Care",
+                  "Paraben Free",
+                  "Cruelty Free",
+                  "Vegan Friendly",
+                  "No Bleach",
+                  "Proudly MADE IN INDIA",
+                ],
+                benefits: [
+                  "Non greasy and non sticky",
+                  "Easy and simple to use",
+                  "Nourish and Moisturize your skin",
+                  "Enriched with Multi Fruit Extracts (Lime, Cucumber, Papaya, Kiwi, Mulberry, Turmeric, Strawberry)",
+                  "Deep Cleansing",
+                  "Can also be used as a makeup remover",
+                  "Free of animal by-products, harmful parabens",
+                ],
+                howToUse: [
+                  "Step 1 : Apply the Cleansing Milk evenly on entire face and neck avoiding eyes in upward and circular motion.",
+                  "Step 2 : Gently massage for approximately 3 to 5 minutes for deep pore cleansing and then wipe it off with wet cotton.",
+                  "STORAGE : Kindly do not expose to direct sunlight and keep in cool and dry place.",
+                ],
+                ingredientsUsed: [
+                  "Extracts of Lime, Kiwi, Mulberry, Cucumber, Papaya, Orange, Strawberry",
+                ],
+              },
+              categoryId: "698f422e9cb883637ce9286f",
+            },
+          ],
+          children: [],
+        },
+        {
+          _id: "698f42359cb883637ce92873",
+          categoryName: "cream",
+          parentId: "698f42129cb883637ce9286b",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f42469cb883637ce92877",
+          categoryName: "face clean up",
+          parentId: "698f42129cb883637ce9286b",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f42559cb883637ce9287b",
+          categoryName: "face serum",
+          parentId: "698f42129cb883637ce9286b",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f425f9cb883637ce9287f",
+          categoryName: "face wash",
+          parentId: "698f42129cb883637ce9286b",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f42689cb883637ce92883",
+          categoryName: "facial kit",
+          parentId: "698f42129cb883637ce9286b",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f427b9cb883637ce92887",
+          categoryName: "gel",
+          parentId: "698f42129cb883637ce9286b",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f42869cb883637ce9288b",
+          categoryName: "modelling mask",
+          parentId: "698f42129cb883637ce9286b",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f42999cb883637ce9288f",
+          categoryName: "sun care",
+          parentId: "698f42129cb883637ce9286b",
+          products: [],
+          children: [
+            {
+              _id: "698f42d49cb883637ce9289f",
+              categoryName: "sunscreen lotion",
+              parentId: "698f42999cb883637ce9288f",
+              products: [],
+              children: [],
+            },
+          ],
+        },
+        {
+          _id: "698f42b69cb883637ce92897",
+          categoryName: "toner",
+          parentId: "698f42129cb883637ce9286b",
+          products: [],
+          children: [],
+        },
+      ],
+    },
+    {
+      _id: "698f42ee9cb883637ce928a3",
+      categoryName: "hair care",
+      parentId: null,
+      products: [],
+      children: [
+        {
+          _id: "698f42fd9cb883637ce928a7",
+          categoryName: "hair mask",
+          parentId: "698f42ee9cb883637ce928a3",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f430d9cb883637ce928ab",
+          categoryName: "hair oil",
+          parentId: "698f42ee9cb883637ce928a3",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f43199cb883637ce928af",
+          categoryName: "hair serum",
+          parentId: "698f42ee9cb883637ce928a3",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f432a9cb883637ce928b3",
+          categoryName: "hair spa",
+          parentId: "698f42ee9cb883637ce928a3",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f43359cb883637ce928b7",
+          categoryName: "shampoo",
+          parentId: "698f42ee9cb883637ce928a3",
+          products: [],
+          children: [],
+        },
+      ],
+    },
+    {
+      _id: "698f43439cb883637ce928bb",
+      categoryName: "lazure",
+      parentId: null,
+      products: [],
+      children: [],
+    },
+    {
+      _id: "698f434f9cb883637ce928bf",
+      categoryName: "personal care",
+      parentId: null,
+      products: [],
+      children: [
+        {
+          _id: "698f43649cb883637ce928c3",
+          categoryName: "body talc",
+          parentId: "698f434f9cb883637ce928bf",
+          products: [
+            {
+              id: "69a145c809847a3ee97ab3f8",
+              title: "Osam Neem Tulsi Deo Talc",
+              images: [
+                "https://res.cloudinary.com/dgfnccyus/image/upload/v1768890923/Osam_Neem_Tulsi_Deo_Talc1_bpwxsy.webp",
+                "https://res.cloudinary.com/dgfnccyus/image/upload/v1768890924/Osam_Neem_Tulsi_Deo_Talc2_aamhhz.webp",
+                "https://res.cloudinary.com/dgfnccyus/image/upload/v1768890924/Osam_Neem_Tulsi_Deo_Talc3_fhirue.webp",
+              ],
+              price: 115,
+              description:
+                "Usage of Neem and Tulsi : Traditionally known for soothing and healing properties",
+              sku: "SSCPL1073",
+              otherDetails: {
+                isNewArrival: true,
+                isFeatured: false,
+                isBestSeller: true,
+                isOnSale: false,
+                isDiscounted: false,
+                discount: 0,
+                isLimitedEdition: false,
+                isDiscountinued: false,
+                isCodAvailable: false,
+                isReturnable: false,
+                isOutOfStock: false,
+                productDetails: {
+                  netContent: "100 g",
+                  useBefore: "Use Before 24 month from date of manufacture",
+                  mrp: "₹ 115.00 (Incl. of all taxes)",
+                  uspGram: "₹ 1.15 per gram",
+                  genericName: "TALC",
+                  countryOfOrigin: "India",
+                  manufacturedBy:
+                    "Sai Samartha Cosmetics Pvt Ltd\nPlot 54, Sector 1, The V.T.I.C. Estate, Gauraipada, Vasai East, District Palghar – 401208\nM.L. No.: MH/105046",
+                  consumerFeedback:
+                    "In case of consumer feedback and complaints, write to our customer care executive on “Manufactured By” address, contact on +91-7208755920, email to support@sscplherbals.com",
+                  usageRestriction: "FOR EXTERNAL USE ONLY",
+                  storage:
+                    "Store in cool & dry place. Keep away from direct sunlight, heat & fire.",
+                  caution:
+                    "Product may contain herbal extracts, oils & butters from botanical and natural sources and may change colour & fragrance. Please read product label carefully for list of ingredients.",
+                  warning:
+                    "Patch test recommended before use. Discontinue if irritation occurs. Even natural ingredients may cause or trigger allergies.",
+                },
+                productDescription: [
+                  "Paraben Free",
+                  "Cruelty Free",
+                  "No Bleach",
+                  "Vegan",
+                  "Enriched with Neem and Tulsi",
+                  "Full Ingredient Disclosure",
+                  "No Gimmicks",
+                  "Simple and Easy Skin Care",
+                  "Proudly MADE IN INDIA",
+                ],
+                benefits: [
+                  "Enriched with Neem and Tulsi Powders",
+                  "Helps fight prickly heat",
+                  "For All Skin Types",
+                  "For Face and Body",
+                  "Fresh Herbal Aroma",
+                  "Free of animal by-products and harmful parabens",
+                  "NO Bleach",
+                  "Made IN INDIA",
+                ],
+                howToUse: [
+                  "Step 1: Mostly its used after bathing for all day freshness.",
+                  "Step 2 : Take your powder puff and dust your dusting perfume powder lightly around your neck, wrists, inner elbow, behind the ear, under arms or just about anywhere you wish to apply on the skin area.",
+                  "Can be helpful for relief from itching and burning sensation caused by excessive respiration, prickly heat and rashes.",
+                  "STORAGE : Kindly do not expose to direct sunlight and keep in cool and dry place.",
+                ],
+                ingredientsUsed: ["Neem, Tulsi"],
+              },
+              categoryId: "698f43649cb883637ce928c3",
+            },
+          ],
+          children: [],
+        },
+        {
+          _id: "698f43739cb883637ce928c7",
+          categoryName: "gel toothpaste",
+          parentId: "698f434f9cb883637ce928bf",
+          products: [],
+          children: [],
+        },
+      ],
+    },
+    {
+      _id: "698f43869cb883637ce928cb",
+      categoryName: "shop by concern",
+      parentId: null,
+      products: [],
+      children: [
+        {
+          _id: "698f43949cb883637ce928cf",
+          categoryName: "acne",
+          parentId: "698f43869cb883637ce928cb",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f439c9cb883637ce928d3",
+          categoryName: "ageing",
+          parentId: "698f43869cb883637ce928cb",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f43a69cb883637ce928d7",
+          categoryName: "cracked heels",
+          parentId: "698f43869cb883637ce928cb",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f43ae9cb883637ce928db",
+          categoryName: "dandruff",
+          parentId: "698f43869cb883637ce928cb",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f43b99cb883637ce928df",
+          categoryName: "dry damaged hair",
+          parentId: "698f43869cb883637ce928cb",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f43c19cb883637ce928e3",
+          categoryName: "dryness",
+          parentId: "698f43869cb883637ce928cb",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f43c89cb883637ce928e7",
+          categoryName: "dullness",
+          parentId: "698f43869cb883637ce928cb",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f43d09cb883637ce928eb",
+          categoryName: "hair fall",
+          parentId: "698f43869cb883637ce928cb",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f43d89cb883637ce928ef",
+          categoryName: "oily skin",
+          parentId: "698f43869cb883637ce928cb",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f43e09cb883637ce928f3",
+          categoryName: "pigmentation",
+          parentId: "698f43869cb883637ce928cb",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f43e79cb883637ce928f7",
+          categoryName: "scalp care",
+          parentId: "698f43869cb883637ce928cb",
+          products: [],
+          children: [],
+        },
+        {
+          _id: "698f43ee9cb883637ce928fb",
+          categoryName: "tanning",
+          parentId: "698f43869cb883637ce928cb",
+          products: [],
+          children: [],
+        },
+      ],
+    },
+    {
+      _id: "698f43f59cb883637ce928ff",
+      categoryName: "sparino",
+      parentId: null,
+      products: [],
+      children: [],
+    },
+  ],
+  statusCode: 200,
+};
+
+const extractProducts = (categories) => {
+  //   console.log(categories);
+  return categories.flatMap((category) => [
+    ...(category.products || []),
+    ...extractProducts(category.children || []),
+  ]);
+};
+
+const flatternProducts = myArray.result;
+// console.log(flatternProducts);
+
+const allProducts = extractProducts(flatternProducts);
+// console.log(allProducts);
