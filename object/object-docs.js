@@ -7,7 +7,11 @@ const learnObjects = () => {
     showFullName: function () {
       return this.firstName + " " + this.middleName + " " + this.lastName; // Added spaces
     },
+    showFullName2: () => {
+      return this.firstName + " " + this.middleName + " " + this.lastName; // Added spaces
+    },
   };
+  console.log(this);
 
   // 1. HOW TO ADD PROPERTIES
   person.salary = 50000;

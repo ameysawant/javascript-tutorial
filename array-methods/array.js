@@ -7,8 +7,16 @@ const learnArraysComplete = () => {
   let duplicates = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4];
 
   // Array of objects - Users
+  let obj = {
+    id: 1,
+    name: "John",
+    age: 25,
+    city: "NYC",
+    active: true,
+    salary: 90000,
+  };
   let users = [
-    { id: 1, name: "John", age: 25, city: "NYC", active: true, salary: 50000 },
+    { id: 1, name: "John", age: 25, city: "NYC", active: true, salary: 90000 },
     { id: 2, name: "Jane", age: 30, city: "LA", active: false, salary: 60000 },
     {
       id: 3,
@@ -125,8 +133,74 @@ const learnArraysComplete = () => {
     }
     return item;
   });
-  console.log("original array ", users);
-  console.log(x);
+  // console.log("original array ", users);
+  // console.log(x);
+  // let z = users[0];
+  // let spreadThis = { ...z };
+  // console.log(x);
+  // console.log(x.name);
+  // console.log(spreadThis.name);
+
+  // const findNames = users.filter((item) => item.name === "Jane");
+  // console.log(findNames);
+
+  // const findNames = users.findIndex((item) => item.salary < 70000);
+  // console.log(findNames);
+
+  // let hasEven = numbers.some((num) => num % 2 === 0);
+  // // Returns true if at least one element passes the test
+  // console.log(hasEven); // true
+
+  // let allPositive = numbers.every((num) => num > 3);
+  // // Returns true if all elements pass the test
+  // console.log(allPositive); // true
+
+  // Shopping cart items
+  const cart = [
+    { item: "Laptop", price: 999, quantity: 1 },
+    { item: "Mouse", price: 25, quantity: 2 },
+    { item: "Keyboard", price: 75, quantity: 1 },
+    { item: "USB Cable", price: 15, quantity: 3 },
+  ];
+
+  // // Calculate total price including quantities
+  const totalPrice = cart.reduce((total, currentItem) => {
+    console.log(total, currentItem);
+    return total + currentItem.price * currentItem.quantity;
+  }, 0);
+
+  console.log(totalPrice); // 999 + (25*2) + 75 + (15*3) = 999 + 50 + 75 + 45 = 1169
+
+  const groupedByCity = users.reduce((acc, user) => {
+    console.log("acc= ", { ...acc }, "userobject= ", user);
+    // // If this city doesn't exist in our accumulator yet, create an empty array
+    if (!acc[user.city]) {
+      acc[user.city] = [];
+    }
+    // Add the current user to their city group
+    acc[user.city].push(user.name); // NYC: ["Alice"]
+    return acc;
+  }, {}); // Start with empty object
+  // console.log(users);
+  console.log(groupedByCity);
+
+  //   const firstPersonInCity = users.reduce((acc, user) => {
+  //   console.log("acc:", { ...acc }, "| checking", user.city); //{ id: 1, name: "John", age: 25, city: "NYC", active: true, salary: 90000 },
+
+  //   // ONLY store if this city doesn't exist yet
+  //   if (!acc[user.city]) {
+  //     acc[user.city] = user.name; //{NYC: 'John', LA: 'Jane'}
+  //     console.log(`  → First person in ${user.city} is ${user.name}`);
+  //   } else {
+  //     console.log(
+  //       `  → ${user.city} already has ${acc[user.city]}, ignoring ${user.name}`,
+  //     );
+  //   }
+
+  //   return acc;
+  // }, {});
+
+  // console.log("Final (only first person per city):", firstPersonInCity);
 };
 
 window.addEventListener("DOMContentLoaded", () => {
